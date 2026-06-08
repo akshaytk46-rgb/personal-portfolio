@@ -36,7 +36,9 @@
 
   /* DARK THEME (DEFAULT - MIDNIGHT SAAS) */
   --bg-raw: 222, 47%, 6%;
-  --bg-page: hsl(var(--bg-raw));
+  --bg-page: radial-gradient(circle at 16% 14%, rgba(59, 130, 246, 0.14), transparent 24%),
+              radial-gradient(circle at 88% 18%, rgba(16, 185, 129, 0.09), transparent 18%),
+              linear-gradient(180deg, hsl(222, 47%, 8%) 0%, hsl(224, 40%, 10%) 58%, hsl(222, 47%, 6%) 100%);
   --bg-surface-raw: 222, 25%, 11%;
   --bg-surface: hsla(var(--bg-surface-raw), 0.7);
   --bg-surface-opaque: hsl(var(--bg-surface-raw));
@@ -78,7 +80,9 @@
 /* LIGHT THEME OVERRIDES (CLEAN TECH) */
 body.light-theme {
   --bg-raw: 210, 40%, 98%;
-  --bg-page: hsl(var(--bg-raw));
+  --bg-page: radial-gradient(circle at 16% 14%, rgba(59, 130, 246, 0.08), transparent 22%),
+              radial-gradient(circle at 88% 18%, rgba(16, 185, 129, 0.04), transparent 22%),
+              linear-gradient(180deg, hsl(210, 40%, 98%) 0%, hsl(226, 40%, 94%) 58%, hsl(210, 40%, 98%) 100%);
   --bg-surface-raw: 0, 0%, 100%;
   --bg-surface: hsla(var(--bg-surface-raw), 0.75);
   --bg-surface-opaque: hsl(var(--bg-surface-raw));
@@ -135,9 +139,7 @@ html {
 
 body {
   font-family: var(--font-primary);
-  background: radial-gradient(circle at 16% 14%, rgba(59, 130, 246, 0.14), transparent 24%),
-              radial-gradient(circle at 88% 18%, rgba(16, 185, 129, 0.09), transparent 18%),
-              linear-gradient(180deg, hsl(222, 47%, 8%) 0%, hsl(224, 40%, 10%) 58%, hsl(222, 47%, 6%) 100%);
+  background: var(--bg-page);
   background-attachment: fixed;
   color: var(--text-primary);
   line-height: 1.5;

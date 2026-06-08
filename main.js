@@ -285,9 +285,10 @@ animate();
 const themeToggleBtn = document.getElementById('theme-toggle-btn');
 
 const currentTheme = localStorage.getItem('theme');
-const systemPrefersLight = window.matchMedia('(prefers-color-scheme: light)').matches;
 
-if (currentTheme === 'light' || (!currentTheme && systemPrefersLight)) {
+if (currentTheme === 'dark') {
+  document.body.classList.remove('light-theme');
+} else {
   document.body.classList.add('light-theme');
 }
 
