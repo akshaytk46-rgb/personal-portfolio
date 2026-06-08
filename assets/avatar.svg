@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#1e1b4b" />
+    </linearGradient>
+    
+    <!-- Neon Gradients -->
+    <linearGradient id="neon-purple" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#a855f7" />
+      <stop offset="100%" stop-color="#6366f1" />
+    </linearGradient>
+    <linearGradient id="neon-cyan" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#06b6d4" />
+      <stop offset="100%" stop-color="#3b82f6" />
+    </linearGradient>
+    
+    <!-- Glowing Filters -->
+    <filter id="glow-purple" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+    <filter id="glow-cyan" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Base Background -->
+  <rect width="100%" height="100%" fill="url(#bg-grad)" rx="24" />
+  
+  <!-- Outer Cyber Ring -->
+  <circle cx="200" cy="200" r="140" fill="none" stroke="url(#neon-purple)" stroke-width="2" stroke-dasharray="10 15 30 10 5 10" filter="url(#glow-purple)" opacity="0.6" />
+  <circle cx="200" cy="200" r="130" fill="none" stroke="url(#neon-cyan)" stroke-width="1" stroke-dasharray="5 5" opacity="0.4" />
+  
+  <!-- Tech Grid Background -->
+  <path d="M 100,200 L 300,200 M 200,100 L 200,300 M 130,130 L 270,270 M 130,270 L 270,130" stroke="#334155" stroke-width="1" stroke-dasharray="4 8" />
+  
+  <!-- Abstract Cyber Head/Face Structure -->
+  <!-- Inner Glow Hexagon -->
+  <polygon points="200,100 286,150 286,250 200,300 114,250 114,150" fill="none" stroke="url(#neon-cyan)" stroke-width="2" filter="url(#glow-cyan)" />
+  
+  <!-- Developer Code Bracket Eyes/Symbols -->
+  <!-- Left Bracket < -->
+  <path d="M 165,170 L 145,185 L 165,200" fill="none" stroke="url(#neon-cyan)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" filter="url(#glow-cyan)" />
+  <!-- Right Bracket > -->
+  <path d="M 235,170 L 255,185 L 235,200" fill="none" stroke="url(#neon-cyan)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" filter="url(#glow-cyan)" />
+  
+  <!-- Slash in center / -->
+  <path d="M 210,165 L 190,205" fill="none" stroke="url(#neon-purple)" stroke-width="4" stroke-linecap="round" filter="url(#glow-purple)" />
+  
+  <!-- Circuit Nodes and Lines -->
+  <path d="M 200,300 L 200,340 M 114,250 L 80,270 M 286,250 L 320,270 M 200,100 L 200,60" stroke="url(#neon-purple)" stroke-width="2" stroke-linecap="round" />
+  
+  <!-- Glowing Nodes -->
+  <circle cx="200" cy="340" r="5" fill="#a855f7" filter="url(#glow-purple)" />
+  <circle cx="80" cy="270" r="5" fill="#06b6d4" filter="url(#glow-cyan)" />
+  <circle cx="320" cy="270" r="5" fill="#06b6d4" filter="url(#glow-cyan)" />
+  <circle cx="200" cy="60" r="5" fill="#a855f7" filter="url(#glow-purple)" />
+</svg>

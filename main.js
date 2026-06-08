@@ -475,18 +475,22 @@ function showFormStatus(text, type) {
 /* ==========================================
    SCROLL REVEAL ANIMATIONS
    ========================================== */
-const revealElements = document.querySelectorAll('.reveal');
+document.documentElement.classList.add('js-enabled');
 
-const revealObserver = new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add('active');
-    }
+document.addEventListener('DOMContentLoaded', () => {
+  const revealElements = document.querySelectorAll('.reveal');
+
+  const revealObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('active');
+      }
+    });
+  }, {
+    root: null,
+    threshold: 0.05,
+    rootMargin: '0px 0px -100px 0px'
   });
-}, {
-  root: null,
-  threshold: 0.15,
-  rootMargin: '0px'
-});
 
-revealElements.forEach(element => revealObserver.observe(element));
+  revealElements.forEach(element => revealObserver.observe(element));
+});

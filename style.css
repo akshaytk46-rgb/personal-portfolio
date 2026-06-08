@@ -135,12 +135,15 @@ html {
 
 body {
   font-family: var(--font-primary);
-  background-color: var(--bg-page);
+  background: radial-gradient(circle at 16% 14%, rgba(59, 130, 246, 0.14), transparent 24%),
+              radial-gradient(circle at 88% 18%, rgba(16, 185, 129, 0.09), transparent 18%),
+              linear-gradient(180deg, hsl(222, 47%, 8%) 0%, hsl(224, 40%, 10%) 58%, hsl(222, 47%, 6%) 100%);
+  background-attachment: fixed;
   color: var(--text-primary);
   line-height: 1.5;
   letter-spacing: -0.011em;
   overflow-x: hidden;
-  transition: background-color var(--transition-medium), color var(--transition-medium);
+  transition: background var(--transition-medium), color var(--transition-medium);
 }
 
 ::selection {
@@ -355,13 +358,15 @@ body.light-theme #bg-canvas {
   height: 100vh;
   z-index: -1;
   pointer-events: none;
-  background: radial-gradient(circle at 50% 50%, rgba(59, 130, 246, 0.04) 0%, transparent 65%),
-              radial-gradient(circle at 10% 20%, rgba(16, 185, 129, 0.03) 0%, transparent 55%);
+  background: radial-gradient(circle at 12% 14%, rgba(59, 130, 246, 0.16) 0%, transparent 28%),
+              radial-gradient(circle at 84% 18%, rgba(16, 185, 129, 0.11) 0%, transparent 20%),
+              radial-gradient(circle at 50% 74%, rgba(255, 255, 255, 0.05) 0%, transparent 22%);
 }
 
 body.light-theme .radial-glow {
-  background: radial-gradient(circle at 50% 50%, rgba(59, 130, 246, 0.02) 0%, transparent 70%),
-              radial-gradient(circle at 10% 20%, rgba(16, 185, 129, 0.01) 0%, transparent 60%);
+  background: radial-gradient(circle at 12% 14%, rgba(59, 130, 246, 0.08) 0%, transparent 32%),
+              radial-gradient(circle at 84% 18%, rgba(16, 185, 129, 0.05) 0%, transparent 24%),
+              radial-gradient(circle at 50% 74%, rgba(255, 255, 255, 0.035) 0%, transparent 24%);
 }
 
 /* ==========================================
@@ -489,17 +494,21 @@ body.light-theme .theme-toggle .moon-icon {
    HERO SECTION
    ========================================== */
 .hero {
-  min-height: 90vh;
+  min-height: 92vh;
   display: flex;
   align-items: center;
   padding-top: 80px;
-  background-image: radial-gradient(rgba(59, 130, 246, 0.08) 1.2px, transparent 1.2px);
-  background-size: 24px 24px;
+  background: linear-gradient(180deg, rgba(6, 16, 34, 0.96) 0%, rgba(7, 16, 32, 0.96) 100%),
+              radial-gradient(circle at 12% 18%, rgba(59, 130, 246, 0.16), transparent 20%),
+              radial-gradient(circle at 86% 8%, rgba(16, 185, 129, 0.08), transparent 20%);
   position: relative;
+  overflow: hidden;
 }
 
 body.light-theme .hero {
-  background-image: radial-gradient(rgba(59, 130, 246, 0.03) 1.2px, transparent 1.2px);
+  background: linear-gradient(180deg, rgba(244, 248, 255, 0.95) 0%, rgba(226, 232, 240, 0.96) 100%),
+              radial-gradient(circle at 12% 18%, rgba(59, 130, 246, 0.08), transparent 22%),
+              radial-gradient(circle at 86% 8%, rgba(16, 185, 129, 0.04), transparent 22%);
 }
 
 .hero-grid {
@@ -830,6 +839,7 @@ body.light-theme .filter-btn.active {
 .project-card {
   display: flex;
   flex-direction: column;
+  min-height: 520px;
   height: 100%;
   overflow: hidden;
 }
@@ -837,6 +847,7 @@ body.light-theme .filter-btn.active {
 .project-image-box {
   width: 100%;
   aspect-ratio: 16/10;
+  min-height: 240px;
   background: var(--bg-surface-opaque);
   position: relative;
   overflow: hidden;
@@ -847,6 +858,7 @@ body.light-theme .filter-btn.active {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  display: block;
   transition: transform var(--transition-medium);
 }
 
@@ -897,7 +909,8 @@ body.light-theme .filter-btn.active {
   display: flex;
   flex-direction: column;
   gap: var(--space-xs);
-  flex-grow: 1;
+  flex: 1 1 auto;
+  min-height: 180px;
 }
 
 .project-tags {
@@ -922,9 +935,10 @@ body.light-theme .filter-btn.active {
 
 .project-desc {
   color: var(--text-secondary);
-  font-size: 0.85rem;
-  line-height: 1.5;
+  font-size: 0.9rem;
+  line-height: 1.75;
   flex-grow: 1;
+  margin-bottom: 0.4rem;
 }
 
 .project-footer {
@@ -934,6 +948,10 @@ body.light-theme .filter-btn.active {
   padding-top: var(--space-xs);
   border-top: 1px solid var(--border-color);
   margin-top: auto;
+}
+
+body.light-theme .project-overlay {
+  background: rgba(255, 255, 255, 0.45);
 }
 
 .project-link {
@@ -1169,12 +1187,17 @@ textarea.form-input {
 
 /* Scroll-based animation utility values */
 .reveal {
-  opacity: 0;
-  transform: translateY(20px);
+  opacity: 1;
+  transform: translateY(0);
   transition: opacity 0.6s cubic-bezier(0.2, 0.8, 0.2, 1), transform 0.6s cubic-bezier(0.2, 0.8, 0.2, 1);
 }
 
-.reveal.active {
+.js-enabled .reveal {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.js-enabled .reveal.active {
   opacity: 1;
   transform: translateY(0);
 }
@@ -1265,5 +1288,21 @@ textarea.form-input {
   
   .badge-2 {
     right: -10px;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .project-card {
+    min-height: auto;
+  }
+
+  .project-image-box {
+    min-height: 220px;
+  }
+
+  .project-info {
+    min-height: auto;
   }
 }
