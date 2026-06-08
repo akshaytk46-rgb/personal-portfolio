@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Professional portfolio of Akshay TK, an experienced IT Support Engineer in Dubai, UAE, specializing in Windows Server, Active Directory administration, Cisco/FortiGate networking, and enterprise user support.">
+  <title>Akshay TK | IT Support Engineer Portfolio</title>
+  
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Floating Background Elements -->
+  <canvas id="bg-canvas"></canvas>
+  <div class="radial-glow" id="glow-overlay"></div>
+
+  <!-- Header Section -->
+  <header class="header" id="main-header">
+    <div class="container nav-container">
+      <a href="#hero" class="logo" id="nav-logo"></a>
+      
+      <!-- Nav Menu -->
+      <nav class="nav-links" id="navigation-menu">
+        <a href="#hero" class="nav-link active" id="link-hero">Home</a>
+        <a href="#about" class="nav-link" id="link-about">About & Experience</a>
+        <a href="#projects" class="nav-link" id="link-projects">Deployments</a>
+        <a href="#contact" class="nav-link" id="link-contact">Contact</a>
+      </nav>
+
+      <div class="controls">
+        <!-- Theme Toggle -->
+        <button class="theme-toggle" id="theme-toggle-btn" aria-label="Toggle light/dark theme">
+          <!-- Moon Icon -->
+          <svg class="moon-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12.3 22h-.1c-5.5 0-10-4.5-10-10C2.2 6.8 6.3 2.5 11.5 2c.3 0 .7.2.8.5.2.3.1.7-.2.9-2.3 1.8-3.6 4.6-3.6 7.6 0 4.9 4 8.9 8.9 8.9 3 0 5.8-1.3 7.6-3.6.2-.3.6-.4.9-.2.3.2.5.5.5.8-.5 5.2-4.8 9.3-10.1 9.3z"/>
+          </svg>
+          <!-- Sun Icon -->
+          <svg class="sun-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 7c-2.76 0-5 2.24-5 5s2.24 5 5 5 5-2.24 5-5-2.24-5-5-5zM2 13h2c.55 0 1-.45 1-1s-.45-1-1-1H2c-.55 0-1 .45-1 1s.45 1 1 1zm18 0h2c.55 0 1-.45 1-1s-.45-1-1-1h-2c-.55 0-1 .45-1 1s.45 1 1 1zM11 2v2c0 .55.45 1 1 1s1-.45 1-1V2c0-.55-.45-1-1-1s-1 .45-1 1zm0 18v2c0 .55.45 1 1 1s1-.45 1-1v-2c0-.55-.45-1-1-1s-1 .45-1 1zM5.99 4.58c-.39-.39-1.03-.39-1.41 0s-.39 1.03 0 1.41l1.06 1.06c.39.39 1.03.39 1.41 0s.39-1.03 0-1.41L5.99 4.58zm12.37 12.37c-.39-.39-1.03-.39-1.41 0s-.39 1.03 0 1.41l1.06 1.06c.39.39 1.03.39 1.41 0s.39-1.03 0-1.41l-1.06-1.06zm1.06-10.96c-.39-.39-1.03-.39-1.41 0l-1.06 1.06c-.39.39-.39 1.03 0 1.41s1.03.39 1.41 0l1.06-1.06c.39-.38.39-1.02 0-1.41zM5.99 18.01l-1.06 1.06c-.39.39-.39 1.03 0 1.41s1.03.39 1.41 0l1.06-1.06c.39-.39.39-1.03 0-1.41z"/>
+          </svg>
+        </button>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button class="menu-btn" id="mobile-menu-btn" aria-label="Toggle mobile navigation menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+      <div class="container hero-grid">
+        <!-- Hero Text -->
+        <div class="hero-content reveal active">
+          <div class="hero-tag">
+            <span class="pulse"></span>
+            Active IT Operations • Dubai, UAE
+          </div>
+          <h1 class="hero-title">
+            Akshay TK <br>
+            <span class="text-gradient">IT Support Engineer</span>
+          </h1>
+          <p class="hero-subtitle">
+            Experienced IT Support Engineer with over 3 years of hands-on experience in enterprise system administration, LAN/WAN routing, switching, and security firewall infrastructure. Dedicated to maintaining 99.9% system availability and high-performance operations.
+          </p>
+          <div class="hero-btns">
+            <a href="#projects" class="btn btn-primary" id="btn-hero-projects">
+              Explore Deployments
+              <!-- Arrow Right Icon -->
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+            <a href="#contact" class="btn btn-secondary" id="btn-hero-contact">Contact Me</a>
+          </div>
+        </div>
+
+        <!-- Hero Graphic (Dashboard Panel) -->
+        <div class="hero-visual reveal active">
+          <div class="hero-avatar-frame glass-panel">
+            <img src="assets/avatar.svg" alt="IT Support Engineer Graphic Representation" class="hero-avatar-image" id="hero-avatar-img">
+            
+            <!-- Floating Interactive Badges -->
+            <div class="floating-badge badge-1 glass-panel">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2">
+                <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
+                <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
+                <line x1="6" y1="6" x2="6.01" y2="6"></line>
+                <line x1="6" y1="18" x2="6.01" y2="18"></line>
+              </svg>
+              <span>Windows Server & AD</span>
+            </div>
+            
+            <div class="floating-badge badge-2 glass-panel">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2">
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="22" y1="12" x2="18" y2="12"></line>
+                <line x1="6" y1="12" x2="2" y2="12"></line>
+                <line x1="12" y1="6" x2="12" y2="2"></line>
+                <line x1="12" y1="22" x2="12" y2="18"></line>
+              </svg>
+              <span>Cisco CCNA Networking</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section" id="about">
+      <div class="container">
+        <h2 class="section-title reveal">About & <span>Experience</span></h2>
+        
+        <div class="about-grid">
+          <!-- Text and Timeline -->
+          <div class="about-info reveal">
+            <h3 class="about-title">Supporting Infrastructure, Empowering Users</h3>
+            <p class="about-text">
+              I am a performance-driven IT Support Engineer focused on deploying efficient IT operations, enhancing system reliability, and providing exceptional user support. Over the past 3+ years, I have configured and maintained active directory services, established secure firewall rules, and troubleshooted complex enterprise LAN/WAN configurations.
+            </p>
+            <p class="about-text">
+              My expertise covers system virtualization, data recovery architectures, network routing protocols, and setting up centralized surveillance systems. I excel in translating IT operational requirements into secure, high-uptime network topologies.
+            </p>
+            <p class="about-text">
+              I specialise in Windows Server infrastructure hardening, FortiGate firewall policy design, and CCTV/NVR integration for enterprise facilities. This includes secure server role deployment, firewall segmentation for guest and corporate traffic, and surveillance system architecture with reliable recording, remote access, and incident logging.
+            </p>
+            <p class="about-text" style="font-weight: 600; color: var(--text-primary); margin-top: 10px;">
+              🗣️ Languages: <span class="text-gradient">English, Hindi, Malayalam</span>
+            </p>
+
+            <!-- Timeline -->
+            <div class="experience-timeline" style="margin-top: 20px;">
+              <h4 class="skills-category-title" style="margin-bottom: 15px;">Professional History</h4>
+              
+              <div class="timeline-item">
+                <div class="timeline-date">Aug 2023 - Apr 2025</div>
+                <div class="timeline-role">IT Support Engineer</div>
+                <div class="timeline-company">Sogo Synergy Pvt Ltd | Bangalore, India</div>
+                <p class="timeline-desc">
+                  • Administered Windows Server (2012-2022) environment, configuring Active Directory domain controllers, Group Policy Objects (GPOs), DNS zones, and DHCP scopes for 150+ corporate endpoints.<br>
+                  • Virtualized IT workloads using Hyper-V and VMware ESXi, optimizing compute allocations and reducing hardware dependencies by 30%.<br>
+                  • Configured and managed FortiGate firewalls, implementing secure IPsec/SSL VPN tunnels, security filtering profiles, and port forwarding rules.<br>
+                  • Managed automated server backups (Acronis, Veeam), ensuring 100% data recoverability and compliance with corporate SLA guidelines.
+                </p>
+              </div>
+
+              <div class="timeline-item">
+                <div class="timeline-date">Jan 2023 - Jul 2023</div>
+                <div class="timeline-role">Network & Systems Trainee</div>
+                <div class="timeline-company">Cloud Unicorn Pvt Ltd | India</div>
+                <p class="timeline-desc">
+                  • Supported Cisco router and switch configurations, implementing static routing, OSPF configurations, VLAN segmentation, and trunk policies.<br>
+                  • Assisted in troubleshooting WAN routing errors, Spanning Tree Protocol (STP) convergence, and subnet allocation issues.<br>
+                  • Resolved over 300+ systems and network incidents via ServiceNow ticketing systems, maintaining average SLA resolution rates above 98%.<br>
+                  • Provisioned user devices including Outlook mail profiles, Cisco IP Phones, and local print server network setups.
+                </p>
+              </div>
+
+              <div class="timeline-item">
+                <div class="timeline-date">Jan 2019 - Dec 2022</div>
+                <div class="timeline-role">Electronics & Display Technician</div>
+                <div class="timeline-company">Crystal View Technologies | India</div>
+                <p class="timeline-desc">
+                  • Diagnosed failures in electronic controller assemblies and motherboard circuits down to component levels, minimizing replacement costs.<br>
+                  • Calibrated complex display systems and hardware rigs, using oscilloscopes and multimeters to verify voltage regulations, achieving 99% component repair accuracy.<br>
+                  • Maintained catalog logs for electronic diagnostic assets and equipment.
+                </p>
+              </div>
+            </div>
+
+            <!-- Education & Certifications -->
+            <div class="experience-timeline" style="margin-top: 30px;">
+              <h4 class="skills-category-title" style="margin-bottom: 15px;">Education & Credentials</h4>
+              
+              <div class="timeline-item">
+                <div class="timeline-date">2022</div>
+                <div class="timeline-role">CCNA & CCNP Technical Training</div>
+                <div class="timeline-company">Besant Technologies</div>
+                <p class="timeline-desc">Comprehensive training in enterprise network routing and switching protocols, VLAN topologies, WAN networks, and security policies.</p>
+              </div>
+
+              <div class="timeline-item">
+                <div class="timeline-date">2018</div>
+                <div class="timeline-role">NCVT Certification (Electronics Mechanic)</div>
+                <div class="timeline-company">National Council for Vocational Training</div>
+                <p class="timeline-desc">National-level certification focusing on circuit design, hardware diagnostics, and electronic diagnostics equipment operations.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skills Cards -->
+          <div class="skills-container reveal">
+            <h3 class="about-title">Technical Expertise</h3>
+            
+            <!-- Category 1 -->
+            <div class="skills-category">
+              <h4 class="skills-category-title">System Administration</h4>
+              <div class="skills-grid">
+                <div class="skill-pill">Windows Server (2012-2022)</div>
+                <div class="skill-pill">Active Directory (AD DS)</div>
+                <div class="skill-pill">Group Policy (GPO)</div>
+                <div class="skill-pill">DNS & DHCP Scope</div>
+                <div class="skill-pill">Enterprise File Sharing</div>
+                <div class="skill-pill">Hyper-V & VMware ESXi</div>
+                <div class="skill-pill">Server Backups (Veeam/Acronis)</div>
+              </div>
+            </div>
+
+            <!-- Category 2 -->
+            <div class="skills-category">
+              <h4 class="skills-category-title">Networking & Security</h4>
+              <div class="skills-grid">
+                <div class="skill-pill">LAN/WAN Configuration</div>
+                <div class="skill-pill">Switching & Routing</div>
+                <div class="skill-pill">VLANs & Trunking</div>
+                <div class="skill-pill">Subnet IP Planning</div>
+                <div class="skill-pill">FortiGate Firewalls</div>
+                <div class="skill-pill">Cisco Routers & Switches</div>
+                <div class="skill-pill">OSPF & STP Protocols</div>
+                <div class="skill-pill">VPN Setup (IPsec/SSL)</div>
+              </div>
+            </div>
+
+            <!-- Category 3 -->
+            <div class="skills-category">
+              <h4 class="skills-category-title">End User & Infrastructure Support</h4>
+              <div class="skills-grid">
+                <div class="skill-pill">Office 365 Admin Portal</div>
+                <div class="skill-pill">Outlook & Exchange Support</div>
+                <div class="skill-pill">TeamViewer, AnyDesk, RDP</div>
+                <div class="skill-pill">Acronis & AOMEI Backups</div>
+                <div class="skill-pill">CCTV & NVR Systems</div>
+                <div class="skill-pill">IP Phone & Printer Setup</div>
+                <div class="skill-pill">ServiceNow Ticket Management</div>
+                <div class="skill-pill">Hardware Troubleshooting</div>
+              </div>
+            </div>
+
+            <!-- Category 4 -->
+            <div class="skills-category">
+              <h4 class="skills-category-title">Security & Surveillance</h4>
+              <div class="skills-grid">
+                <div class="skill-pill">FortiGate Firewall Policies</div>
+                <div class="skill-pill">VLAN Segmentation & Zoning</div>
+                <div class="skill-pill">IPS / IDS Monitoring</div>
+                <div class="skill-pill">IP CCTV & NVR Architecture</div>
+                <div class="skill-pill">Remote Secure Access</div>
+                <div class="skill-pill">Physical & Network Security</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="projects-header reveal">
+          <h2 class="section-title">Technical <span>Deployments</span></h2>
+          <!-- Filter buttons -->
+          <div class="filter-btn-group" id="filter-buttons">
+            <button class="filter-btn active" data-filter="all" id="filter-btn-all">All</button>
+            <button class="filter-btn" data-filter="sys" id="filter-btn-sys">Systems</button>
+            <button class="filter-btn" data-filter="net" id="filter-btn-net">Networking</button>
+            <button class="filter-btn" data-filter="support" id="filter-btn-support">IT Support</button>
+          </div>
+        </div>
+
+        <div class="projects-grid" id="projects-grid">
+          <!-- Project 1 -->
+          <article class="project-card glass-panel reveal" data-category="sys">
+            <div class="project-image-box">
+              <img src="assets/project1.svg" alt="Active Directory and Windows Server infrastructure diagram" class="project-image">
+              <div class="project-overlay">
+                <a href="#" class="project-link-btn" aria-label="View AD Project Details" id="proj-link-1">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="7" y1="17" x2="17" y2="7"></line>
+                    <polyline points="7 7 17 7 17 17"></polyline>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="project-info">
+              <div class="project-tags">
+                <span class="project-tag">Windows Server 2022</span>
+                <span class="project-tag">Active Directory</span>
+                <span class="project-tag">Group Policy</span>
+              </div>
+              <h3 class="project-title">Active Directory & GPO Optimization</h3>
+              <p class="project-desc">Implemented a centralized Windows Server 2022 domain controller ecosystem, standardizing DNS resolution, DHCP failovers, and deploying custom GPO scripts for secure device lockdowns.</p>
+              <div class="project-footer">
+                <a href="#" class="project-link" id="proj-foot-link-1">
+                  Specifications
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="project-card glass-panel reveal" data-category="net">
+            <div class="project-image-box">
+              <img src="assets/project2.svg" alt="Network layout diagram of routers and firewalls" class="project-image">
+              <div class="project-overlay">
+                <a href="#" class="project-link-btn" aria-label="View Firewall Config details" id="proj-link-2">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="7" y1="17" x2="17" y2="7"></line>
+                    <polyline points="7 7 17 7 17 17"></polyline>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="project-info">
+              <div class="project-tags">
+                <span class="project-tag">FortiGate Firewall</span>
+                <span class="project-tag">Cisco Routing</span>
+                <span class="project-tag">VLAN Segmentation</span>
+              </div>
+              <h3 class="project-title">FortiGate Secure SD-WAN Setup</h3>
+              <p class="project-desc">Configured corporate routing and switching infrastructure, implementing multi-VLAN isolation, inter-VLAN trunking policies, and FortiGate security web filtering rules.</p>
+              <div class="project-footer">
+                <a href="#" class="project-link" id="proj-foot-link-2">
+                  Network Layout
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3 -->
+          <article class="project-card glass-panel reveal" data-category="support">
+            <div class="project-image-box">
+              <img src="assets/project3.svg" alt="Cloud backup and server migration dashboard" class="project-image">
+              <div class="project-overlay">
+                <a href="#" class="project-link-btn" aria-label="View backup and server migration details" id="proj-link-3">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="7" y1="17" x2="17" y2="7"></line>
+                    <polyline points="7 7 17 7 17 17"></polyline>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="project-info">
+              <div class="project-tags">
+                <span class="project-tag">Microsoft 365</span>
+                <span class="project-tag">Azure AD Sync</span>
+                <span class="project-tag">Acronis Backup</span>
+              </div>
+              <h3 class="project-title">Microsoft 365 Tenant Migration</h3>
+              <p class="project-desc">Migrated local Exchange mailboxes to Microsoft 365 cloud environment. Setup Azure Active Directory synchronization and configured scheduled backups via Acronis.</p>
+              <div class="project-footer">
+                <a href="#" class="project-link" id="proj-foot-link-3">
+                  Operations Details
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 4 -->
+          <article class="project-card glass-panel reveal" data-category="support">
+            <div class="project-image-box">
+              <img src="assets/project4.svg" alt="Enterprise CCTV and NVR deployment illustration" class="project-image">
+              <div class="project-overlay">
+                <a href="#" class="project-link-btn" aria-label="View camera network layout details" id="proj-link-4">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="7" y1="17" x2="17" y2="7"></line>
+                    <polyline points="7 7 17 7 17 17"></polyline>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="project-info">
+              <div class="project-tags">
+                <span class="project-tag">IP CCTV / NVR</span>
+                <span class="project-tag">VoIP Cisco Subnets</span>
+                <span class="project-tag">Hardware</span>
+              </div>
+              <h3 class="project-title">IP CCTV & VoIP Subnet Deployment</h3>
+              <p class="project-desc">Engineered localized enterprise security camera systems integrated with high-capacity NVR storages. Setup VoIP Cisco subnets with custom Quality of Service (QoS) mappings.</p>
+              <div class="project-footer">
+                <a href="#" class="project-link" id="proj-foot-link-4">
+                  Hardware Specifications
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Certifications Showcase Section -->
+    <section class="section" id="certifications" style="border-top: 1px solid var(--border-color); background: rgba(var(--bg-raw), 0.15);">
+      <div class="container">
+        <h2 class="section-title reveal">Professional <span>Credentials</span></h2>
+        
+        <div class="projects-grid">
+          <!-- Cert 1 -->
+          <div class="glass-panel reveal" style="padding: var(--space-sm); display: flex; flex-direction: column; gap: var(--space-xs); border-left: 4px solid var(--primary);">
+            <div style="font-family: var(--font-mono); font-size: 0.85rem; color: var(--primary); font-weight: 600;">CISCO SYSTEMS</div>
+            <h3 style="font-size: 1.15rem; font-weight: 700;">CCNA Routing & Switching</h3>
+            <p style="font-size: 0.85rem; color: var(--text-secondary);">Core network validation covering routing infrastructure, VLAN topologies, security ACLs, and DHCP/DNS services.</p>
+          </div>
+          
+          <!-- Cert 2 -->
+          <div class="glass-panel reveal" style="padding: var(--space-sm); display: flex; flex-direction: column; gap: var(--space-xs); border-left: 4px solid var(--accent);">
+            <div style="font-family: var(--font-mono); font-size: 0.85rem; color: var(--accent); font-weight: 600;">CISCO SYSTEMS</div>
+            <h3 style="font-size: 1.15rem; font-weight: 700;">CCNP Enterprise Training</h3>
+            <p style="font-size: 0.85rem; color: var(--text-secondary);">Advanced network validation including scale architecture, SD-WAN, BGP/OSPF configurations, and VPN tunnel security mappings.</p>
+          </div>
+
+          <!-- Cert 3 -->
+          <div class="glass-panel reveal" style="padding: var(--space-sm); display: flex; flex-direction: column; gap: var(--space-xs); border-left: 4px solid var(--text-muted);">
+            <div style="font-family: var(--font-mono); font-size: 0.85rem; color: var(--text-muted); font-weight: 600;">GOVERNMENT OF INDIA</div>
+            <h3 style="font-size: 1.15rem; font-weight: 700;">NCVT Electronics Mechanic</h3>
+            <p style="font-size: 0.85rem; color: var(--text-secondary);">National certification in diagnostics, motherboard circuit repairs, logic gates, and hardware signal validation.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section" id="contact">
+      <div class="container">
+        <h2 class="section-title reveal">Get in <span>Touch</span></h2>
+        
+        <div class="contact-grid">
+          <!-- Contact details info -->
+          <div class="contact-info reveal">
+            <h3 class="about-title">Contact Information</h3>
+            <p class="about-text">
+              Looking for a dedicated IT Support Engineer in Dubai or have questions about server infrastructure deployments? Feel free to contact me via email or phone! I will respond as soon as possible.
+            </p>
+            
+            <div class="contact-card-list">
+              <!-- Detail Item 1 (Email) -->
+              <div class="contact-card glass-panel">
+                <div class="contact-icon-box">
+                  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                  </svg>
+                </div>
+                <div>
+                  <div class="contact-detail-title">Send Email</div>
+                  <a href="mailto:akshaytk46@gmail.com" class="contact-detail-value" id="email-address">akshaytk46@gmail.com</a>
+                </div>
+              </div>
+
+              <!-- Detail Item 2 (Phone) -->
+              <div class="contact-card glass-panel">
+                <div class="contact-icon-box">
+                  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6.62 10.79a15.15 15.15 0 006.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1v20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+                  </svg>
+                </div>
+                <div>
+                  <div class="contact-detail-title">Call Phone</div>
+                  <a href="tel:+971543360210" class="contact-detail-value" id="phone-number">+971 54 336 0210</a>
+                </div>
+              </div>
+
+              <!-- Detail Item 3 (Location) -->
+              <div class="contact-card glass-panel">
+                <div class="contact-icon-box">
+                  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                  </svg>
+                </div>
+                <div>
+                  <div class="contact-detail-title">Location</div>
+                  <div class="contact-detail-value">Dubai, UAE</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Form Panel -->
+          <form class="contact-form glass-panel reveal" id="portfolio-contact-form" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="form-name" class="form-label">Name</label>
+                <input type="text" id="form-name" name="name" class="form-input" placeholder="Your Name" required>
+              </div>
+              <div class="form-group">
+                <label for="form-email" class="form-label">Email</label>
+                <input type="email" id="form-email" name="email" class="form-input" placeholder="your@email.com" required>
+              </div>
+            </div>
+            
+            <div class="form-group">
+              <label for="form-subject" class="form-label">Subject</label>
+              <input type="text" id="form-subject" name="subject" class="form-input" placeholder="How can I help you?" required>
+            </div>
+
+            <div class="form-group">
+              <label for="form-message" class="form-label">Message</label>
+              <textarea id="form-message" name="message" class="form-input" placeholder="Tell me about your technical inquiry..." required></textarea>
+            </div>
+
+            <div class="form-status" id="form-status-message"></div>
+
+            <button type="submit" class="btn btn-primary" id="form-submit-btn">
+              Send Ticket
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="22" y1="2" x2="11" y2="13"></line>
+                <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer Section -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-logo">
+        &lt;AKSHAY<span>.</span>IT/&gt;
+      </div>
+      
+      <p class="footer-copy">
+        &copy; 2026 Akshay TK. All rights reserved. Professional IT Operations & Support.
+      </p>
+
+      <div class="footer-socials">
+        <!-- LinkedIn -->
+        <a href="#" class="footer-social-link" aria-label="LinkedIn Profile" id="social-linkedin">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="back-to-top-btn" aria-label="Scroll back to top">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M12 19V5"></path>
+      <polyline points="5 12 12 5 19 12"></polyline>
+    </svg>
+  </button>
+
+  <!-- Script logic -->
+  <script src="main.js"></script>
+</body>
+</html>
