@@ -37,7 +37,7 @@
   <path d="M 380 220 C 430 170 510 170 560 220" fill="none" stroke="#c7d2fe" stroke-width="16" stroke-linecap="round" />
   <path d="M 410 230 C 460 210 490 210 540 230" fill="none" stroke="#7dd3fc" stroke-width="14" stroke-linecap="round" />
 
-  <text x="170" y="140" fill="#e2e8f0" font-family="Inter, sans-serif" font-size="22" font-weight="700">Cloud Backup & Server Sync</text>
+  <text x="170" y="140" fill="#e2e8f0" font-family="Inter, sans-serif" font-size="22" font-weight="700">Cloud Backup &amp; Server Sync</text>
   <text x="170" y="170" fill="#94a3b8" font-family="Inter, sans-serif" font-size="14">Secure replication and remote recovery infrastructure</text>
 
   <path d="M 450 380 H 700" stroke="#22d3ee" stroke-width="6" stroke-linecap="round" />

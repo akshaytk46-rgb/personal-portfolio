@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg-ad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#08101f" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+    <linearGradient id="ad-glow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#60a5fa" />
+      <stop offset="100%" stop-color="#38bdf8" />
+    </linearGradient>
+  </defs>
+  <rect width="100%" height="100%" fill="url(#bg-ad)" />
+  <rect x="120" y="100" width="220" height="320" rx="24" fill="#0f172a" stroke="#334155" stroke-width="4" />
+  <rect x="380" y="100" width="220" height="320" rx="24" fill="#111827" stroke="#334155" stroke-width="4" />
+  <rect x="320" y="140" width="20" height="260" fill="#38bdf8" />
+  <rect x="190" y="140" width="160" height="32" rx="10" fill="#0f172a" />
+  <rect x="190" y="190" width="160" height="32" rx="10" fill="#0f172a" />
+  <rect x="190" y="240" width="160" height="32" rx="10" fill="#0f172a" />
+  <rect x="190" y="290" width="160" height="32" rx="10" fill="#0f172a" />
+  <rect x="190" y="340" width="160" height="32" rx="10" fill="#0f172a" />
+  <rect x="410" y="140" width="160" height="32" rx="10" fill="#0f172a" />
+  <rect x="410" y="190" width="160" height="32" rx="10" fill="#0f172a" />
+  <rect x="410" y="240" width="160" height="32" rx="10" fill="#0f172a" />
+  <rect x="410" y="290" width="160" height="32" rx="10" fill="#0f172a" />
+  <rect x="410" y="340" width="160" height="32" rx="10" fill="#0f172a" />
+  <circle cx="180" cy="380" r="12" fill="#38bdf8" />
+  <circle cx="190" cy="410" r="12" fill="#22d3ee" />
+  <path d="M 210 390 H 440" stroke="#38bdf8" stroke-width="6" />
+  <text x="40" y="90" fill="#e2e8f0" font-family="Inter, sans-serif" font-size="24" font-weight="700">Windows Server &amp; Active Directory</text>
+  <text x="40" y="120" fill="#94a3b8" font-family="Inter, sans-serif" font-size="14">Scalable identity, server and mail infrastructure deployment.</text>
+  <path d="M 560 410 L 640 410" stroke="#22d3ee" stroke-width="6" stroke-linecap="round" />
+  <path d="M 620 390 L 640 410 L 620 430" fill="#22d3ee" />
+</svg>

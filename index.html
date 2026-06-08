@@ -139,9 +139,24 @@
               <h4 class="skills-category-title" style="margin-bottom: 15px;">Professional History</h4>
               
               <div class="timeline-item">
+                <div class="timeline-date">Oct 2025 - Present</div>
+                <div class="timeline-role">IT Support Engineer</div>
+                <div class="timeline-company">Technoxen IT Solutions | UAE</div>
+                <p class="timeline-desc">
+                  • Actively maintaining, monitoring, and executing routine patching for Windows Server environments to ensure high uptime, system security, and optimal performance.<br>
+                  • Managing enterprise Active Directory Domain Services for user lifecycle management, access controls, and security policy enforcement.<br>
+                  • Configuring Microsoft Hyper-V virtual environments and implementing Windows Server Backup strategies for critical data recovery.<br>
+                  • Administering Exchange Server mail systems, managing corporate mailboxes, and troubleshooting mail flow issues across client and server environments.<br>
+                  • Deploying and managing Next-Generation Firewalls with advanced policies, Site-to-Site IPsec VPN tunnels, and SSL VPN remote access.<br>
+                  • Designing and operating centralized NVR/IP CCTV monitoring, access control deployments, and physical security systems.<br>
+                  • Building and maintaining responsive web applications to support business requirements and digital presence.
+                </p>
+              </div>
+
+              <div class="timeline-item">
                 <div class="timeline-date">Aug 2023 - Apr 2025</div>
                 <div class="timeline-role">IT Support Engineer</div>
-                <div class="timeline-company">Sogo Synergy Pvt Ltd | Bangalore, India</div>
+                <div class="timeline-company">Sogo Synergy Pvt Ltd | India</div>
                 <p class="timeline-desc">
                   • Administered Windows Server (2012-2022) environment, configuring Active Directory domain controllers, Group Policy Objects (GPOs), DNS zones, and DHCP scopes for 150+ corporate endpoints.<br>
                   • Virtualized IT workloads using Hyper-V and VMware ESXi, optimizing compute allocations and reducing hardware dependencies by 30%.<br>
@@ -153,7 +168,7 @@
               <div class="timeline-item">
                 <div class="timeline-date">Jan 2023 - Jul 2023</div>
                 <div class="timeline-role">Network & Systems Trainee</div>
-                <div class="timeline-company">Cloud Unicorn Pvt Ltd | India</div>
+                <div class="timeline-company">Cloud Unicorn Pvt Ltd | India (under Sogo Synergy Pvt Ltd)</div>
                 <p class="timeline-desc">
                   • Supported Cisco router and switch configurations, implementing static routing, OSPF configurations, VLAN segmentation, and trunk policies.<br>
                   • Assisted in troubleshooting WAN routing errors, Spanning Tree Protocol (STP) convergence, and subnet allocation issues.<br>
@@ -271,15 +286,34 @@
             <button class="filter-btn" data-filter="net" id="filter-btn-net">Networking</button>
             <button class="filter-btn" data-filter="support" id="filter-btn-support">IT Support</button>
           </div>
+
+          <div class="project-list">
+            <div class="project-list-item">
+              <div class="project-list-title">Enterprise Network & Security Infrastructure Deployment</div>
+              <div class="project-list-badge">Networking</div>
+            </div>
+            <div class="project-list-item">
+              <div class="project-list-title">Windows Server & Active Directory Identity Environment</div>
+              <div class="project-list-badge">Systems</div>
+            </div>
+            <div class="project-list-item">
+              <div class="project-list-title">Physical Security & Surveillance Architecture</div>
+              <div class="project-list-badge">IT Support</div>
+            </div>
+            <div class="project-list-item">
+              <div class="project-list-title">Personal Portfolio & Modern Web Development</div>
+              <div class="project-list-badge">Web Development</div>
+            </div>
+          </div>
         </div>
 
         <div class="projects-grid" id="projects-grid">
           <!-- Project 1 -->
-          <article class="project-card glass-panel reveal" data-category="sys">
+          <article class="project-card glass-panel reveal" data-category="net">
             <div class="project-image-box">
-              <img src="assets/project1.svg" alt="Active Directory and Windows Server infrastructure diagram" class="project-image">
+              <img src="assets/project5.svg" alt="Enterprise network and security infrastructure illustration" class="project-image">
               <div class="project-overlay">
-                <a href="#" class="project-link-btn" aria-label="View AD Project Details" id="proj-link-1">
+                <a href="#" class="project-link-btn" aria-label="View Network Security details" id="proj-link-1">
                   <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                     <line x1="7" y1="17" x2="17" y2="7"></line>
                     <polyline points="7 7 17 7 17 17"></polyline>
@@ -289,15 +323,16 @@
             </div>
             <div class="project-info">
               <div class="project-tags">
-                <span class="project-tag">Windows Server 2022</span>
-                <span class="project-tag">Active Directory</span>
-                <span class="project-tag">Group Policy</span>
+                <span class="project-tag">Fortinet</span>
+                <span class="project-tag">Sangfor</span>
+                <span class="project-tag">DHCP & DNS</span>
               </div>
-              <h3 class="project-title">Active Directory & GPO Optimization</h3>
-              <p class="project-desc">Implemented a centralized Windows Server 2022 domain controller ecosystem, standardizing DNS resolution, DHCP failovers, and deploying custom GPO scripts for secure device lockdowns.</p>
+              <h3 class="project-title">Enterprise Network & Security Infrastructure Deployment</h3>
+              <p class="project-desc">Designed and implemented a secure enterprise network infrastructure with advanced firewall security, secure remote access, and robust local network services.</p>
+              <p class="project-desc">Configured Next-Generation Firewalls with advanced routing, security policies and high availability, established Site-to-Site IPsec VPN tunnels and SSL VPN access, and optimized enterprise-wide DHCP and DNS servers.</p>
               <div class="project-footer">
                 <a href="#" class="project-link" id="proj-foot-link-1">
-                  Specifications
+                  Security Design
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
                 </a>
               </div>
@@ -305,11 +340,11 @@
           </article>
 
           <!-- Project 2 -->
-          <article class="project-card glass-panel reveal" data-category="net">
+          <article class="project-card glass-panel reveal" data-category="sys">
             <div class="project-image-box">
-              <img src="assets/project2.svg" alt="Network layout diagram of routers and firewalls" class="project-image">
+              <img src="assets/project6.svg" alt="Windows Server and Active Directory environment illustration" class="project-image">
               <div class="project-overlay">
-                <a href="#" class="project-link-btn" aria-label="View Firewall Config details" id="proj-link-2">
+                <a href="#" class="project-link-btn" aria-label="View Windows Server details" id="proj-link-2">
                   <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                     <line x1="7" y1="17" x2="17" y2="7"></line>
                     <polyline points="7 7 17 7 17 17"></polyline>
@@ -319,15 +354,16 @@
             </div>
             <div class="project-info">
               <div class="project-tags">
-                <span class="project-tag">FortiGate Firewall</span>
-                <span class="project-tag">Cisco Routing</span>
-                <span class="project-tag">VLAN Segmentation</span>
+                <span class="project-tag">Active Directory</span>
+                <span class="project-tag">Windows Server 2025</span>
+                <span class="project-tag">Exchange Server</span>
               </div>
-              <h3 class="project-title">FortiGate Secure SD-WAN Setup</h3>
-              <p class="project-desc">Configured corporate routing and switching infrastructure, implementing multi-VLAN isolation, inter-VLAN trunking policies, and FortiGate security web filtering rules.</p>
+              <h3 class="project-title">Windows Server & Active Directory Identity Environment</h3>
+              <p class="project-desc">Deployed and managed a scalable Windows Server environment optimizing centralized identity management, resource access, and secure messaging.</p>
+              <p class="project-desc">Structured AD DS organizational units, configured GPOs for strict security compliance, maintained Windows Server 2025/2022 systems, and managed Exchange Server mailboxes, transport rules, and secure mail flow.</p>
               <div class="project-footer">
                 <a href="#" class="project-link" id="proj-foot-link-2">
-                  Network Layout
+                  Identity Services
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
                 </a>
               </div>
@@ -337,9 +373,9 @@
           <!-- Project 3 -->
           <article class="project-card glass-panel reveal" data-category="support">
             <div class="project-image-box">
-              <img src="assets/project3.svg" alt="Cloud backup and server migration dashboard" class="project-image">
+              <img src="assets/project7.svg" alt="Physical security and surveillance architecture illustration" class="project-image">
               <div class="project-overlay">
-                <a href="#" class="project-link-btn" aria-label="View backup and server migration details" id="proj-link-3">
+                <a href="#" class="project-link-btn" aria-label="View Surveillance Architecture details" id="proj-link-3">
                   <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                     <line x1="7" y1="17" x2="17" y2="7"></line>
                     <polyline points="7 7 17 7 17 17"></polyline>
@@ -349,15 +385,16 @@
             </div>
             <div class="project-info">
               <div class="project-tags">
-                <span class="project-tag">Microsoft 365</span>
-                <span class="project-tag">Azure AD Sync</span>
-                <span class="project-tag">Acronis Backup</span>
+                <span class="project-tag">IP CCTV</span>
+                <span class="project-tag">NVR Consolidation</span>
+                <span class="project-tag">Hikvision</span>
               </div>
-              <h3 class="project-title">Microsoft 365 Tenant Migration</h3>
-              <p class="project-desc">Migrated local Exchange mailboxes to Microsoft 365 cloud environment. Setup Azure Active Directory synchronization and configured scheduled backups via Acronis.</p>
+              <h3 class="project-title">Physical Security & Surveillance Architecture</h3>
+              <p class="project-desc">Planned and executed a multi-location IP CCTV surveillance and physical access control system integrated across centralized management platforms.</p>
+              <p class="project-desc">Reorganized and optimized NVR camera streams across multiple devices, balanced network bandwidth, and integrated Hikvision Hik-Central/iVMS for centralized monitoring and storage management.</p>
               <div class="project-footer">
                 <a href="#" class="project-link" id="proj-foot-link-3">
-                  Operations Details
+                  Surveillance Systems
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
                 </a>
               </div>
@@ -365,11 +402,11 @@
           </article>
 
           <!-- Project 4 -->
-          <article class="project-card glass-panel reveal" data-category="support">
+          <article class="project-card glass-panel reveal" data-category="net">
             <div class="project-image-box">
-              <img src="assets/project4.svg" alt="Enterprise CCTV and NVR deployment illustration" class="project-image">
+              <img src="assets/project8.svg" alt="Personal portfolio website development illustration" class="project-image">
               <div class="project-overlay">
-                <a href="#" class="project-link-btn" aria-label="View camera network layout details" id="proj-link-4">
+                <a href="#" class="project-link-btn" aria-label="View Portfolio Website details" id="proj-link-4">
                   <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                     <line x1="7" y1="17" x2="17" y2="7"></line>
                     <polyline points="7 7 17 7 17 17"></polyline>
@@ -379,15 +416,16 @@
             </div>
             <div class="project-info">
               <div class="project-tags">
-                <span class="project-tag">IP CCTV / NVR</span>
-                <span class="project-tag">VoIP Cisco Subnets</span>
-                <span class="project-tag">Hardware</span>
+                <span class="project-tag">HTML5</span>
+                <span class="project-tag">CSS3</span>
+                <span class="project-tag">JavaScript</span>
               </div>
-              <h3 class="project-title">IP CCTV & VoIP Subnet Deployment</h3>
-              <p class="project-desc">Engineered localized enterprise security camera systems integrated with high-capacity NVR storages. Setup VoIP Cisco subnets with custom Quality of Service (QoS) mappings.</p>
+              <h3 class="project-title">Personal Portfolio & Modern Web Development</h3>
+              <p class="project-desc">Developed a responsive, high-performance personal portfolio website to showcase technical expertise, certifications, and infrastructure projects.</p>
+              <p class="project-desc">Built using clean semantic HTML5, modern responsive CSS3, and dynamic JavaScript, while leveraging Git version control and cloud-hosted deployment processes.</p>
               <div class="project-footer">
                 <a href="#" class="project-link" id="proj-foot-link-4">
-                  Hardware Specifications
+                  Web Portfolio
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
                 </a>
               </div>
